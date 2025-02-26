@@ -1,0 +1,549 @@
+.michroma {
+    font-family: 'Michroma', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.light-text {
+    font-weight: 300;
+}
+
+.semibold-text {
+    font-weight: 600;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #100e1cb0;
+/*    background: rgba(0, 0, 0, 0.7);*/
+    z-index: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.header_fire {
+    position: absolute;
+    background: url('../assets/fire.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 35%;
+    top: 25%;
+    z-index: 4;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.desktop-nav, .desktop { display: flex; }
+.mobile-menu { display: none; }
+
+.nav {
+    display: flex;
+    gap: 20px;
+    background: #1a112b;
+    padding: 10px 20px;
+    border: 1px solid #a575e1;
+    border-radius: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.nav a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40%;
+    width: 1px;
+    background-color: #a575e1;
+}
+
+.nav a:hover {
+    color: #a58eff;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-selector {
+    background: #1a112b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #5716a6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    color: #a58eff;
+}
+
+.contact-btn:hover img {
+    content: url('../assets/chat_purple.png');
+}
+
+.contact-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.home__content__logo {
+    width: 50%;
+    height: 50%;
+    justify-self: center;
+}
+
+.description__text {
+    color: #fff;
+}
+
+.home__body__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+/*    gap: 20px;*/
+/*    padding: 20px;*/
+}
+
+.cta-button {
+    background: #2d1431;
+    color: white;
+    border: 1px solid #871134;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.cta-button img {
+    width: 15px;
+}
+
+.avatar_block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -15px;
+}
+
+.avatars img:first-child {
+    margin-left: 0;
+}
+
+.avatar_block_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    font-size: 16px;
+}
+
+.avatar_block_text span {
+    color: #a575e1;
+}
+
+.highlight {
+    color: #c092ff;
+    font-weight: bold;
+}
+
+.title-form {
+    font-size: 26px!important;
+}
+
+.btn-border {
+    border: 1px solid #db1246;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #2d1431;
+}
+
+.btn {
+    margin: 0!important;
+    border: none;
+}
+
+.form__info ul {
+    background-color: transparent!important;
+}
+
+.form__info ul li {
+    position: relative;
+    font-size: 11px!important;
+    line-height: 1.3;
+    background-color: transparent!important;
+    color: #fff;
+}
+
+/* ABOUT */
+.about_fire {
+    position: absolute;
+    background: url(../assets/fire_2.webp) no-repeat center center;
+    background-size: 80vw 100vh;
+    width: 100%;
+    height: 100%;
+    left: -17%;
+    top: 80%;
+    z-index: 4;
+    transform: rotate(354deg);
+}
+
+.container_about {
+    position: relative;
+    z-index: 6;
+}
+
+.about_block {
+    align-self: auto!important;
+}
+
+.about_title span {
+    display: block;
+}
+
+.about_txt { font-size: 15px!important; }
+
+.about_right_section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about_right_section img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #ba64c4;
+}
+
+.about_description {
+    border: 1px solid #a575e1;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Why Trade with NetherexPro? */
+.why_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.why_card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #a575e1;
+    border-radius: 30px;
+    padding: 20px;
+    background: #1a1a2e;
+    min-height: 400px;
+}
+
+.why_card_special {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #a575e1;
+    border-radius: 30px;
+    background: #1a1a2e;
+    min-height: 400px;
+}
+
+.block__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.block__body__description {
+    flex-grow: 1;
+}
+
+.block__body__description_special {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.block__body__description_special p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.block__body__image {
+    border: 1px solid #a575e1;
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin-top: auto;
+}
+
+.block__body__image img {
+    max-width: 110%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    transform: rotateZ(50deg) scale(2.5);
+}
+
+.why_card:hover {
+    background: #403c4d;
+    border: none;
+}
+
+.why_card_special:hover {
+    background: #403c4d;
+    border: none;
+}
+
+.why_card_special:hover .block__body__image {
+    border: none;
+}
+
+.why_card h3 {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-size: 16px!important;
+}
+
+.why_card p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.sign_btn{
+    width: 50%;
+    justify-content: center;
+}
+
+/* INVESTING */
+.investing_section {
+    padding-block: 100px 0!important;
+}
+
+@media only screen and (width:1024px){
+    .home__hold {
+        gap: 50px!important;
+    }
+}
+
+@media (width: 768px) {
+    .header_fire {
+        left: 35%;
+        top: 30%;
+    }
+    .block__body__image {
+        max-height: 230px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header { padding: 15px 10px; }
+    .desktop-nav, .desktop { display: none; }
+    .mobile-menu { 
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+    #menu { 
+        display: none; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100vh; 
+        background: rgba(0, 0, 0, 0.5); 
+        text-align: center; 
+        padding-top: 100px; 
+    }
+    #menu.overlay { 
+        display: block; 
+        z-index: 49;
+    }
+    #menu ul {
+        padding: 0;
+    }
+    #menu li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    #menu a {
+        color: #fff;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+    .contact-btn-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #burger-menu { 
+        cursor: pointer; 
+        height: 27px; 
+        width: 27px; 
+        position: 
+        relative; 
+        z-index: 50; 
+    }
+    #burger-menu span, #burger-menu span:before, #burger-menu span:after {
+        background: #fff; 
+        display: block; 
+        height: 2px; 
+        position: absolute; 
+        transition: 0.3s ease-in-out;
+    }
+    #burger-menu span:before, #burger-menu span:after { content: ''; }
+    #burger-menu span:before { 
+        left: 0; 
+        top: -10px; 
+        width: 27px; 
+    }
+    #burger-menu span { 
+        right: 0; 
+        top: 13px; 
+        width: 27px; 
+    }
+    #burger-menu span:after { 
+        left: 0; 
+        top: 10px; 
+        width: 27px; 
+    }
+    #burger-menu.close span:before { 
+        top: 0; 
+        transform: rotate(90deg); 
+        width: 27px; 
+    }
+    #burger-menu.close span { 
+        transform: rotate(-45deg); 
+        top: 13px; 
+        width: 27px; 
+    }
+    #burger-menu.close span:after { 
+        top: 0; 
+        left: 0; 
+        transform: rotate(90deg); 
+        opacity: 0; 
+        width: 0; 
+    }
+    .description__text { text-align: center; }
+    .home__body__div {
+        padding-top: 50px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    /*  ABOUT  */
+    .about_fire { top: 225%; }
+    .container_about { 
+        justify-content: center!important; 
+        gap: 50px; 
+    }
+    .about_title { display: inline!important; }
+    .about_right_section { gap: 20px; }
+    .about_txt { font-size: 20px!important; }
+
+    /* Why Trade with NetherexPro? */
+    .why_cards { flex-direction: column; }
+}
+
+@media (max-width: 425px) {
+    .header_fire { display: none; }
+}
+
+@media (max-width: 375px) {
+    .home__body__div {
+        flex-direction: column-reverse;
+    }
+}
