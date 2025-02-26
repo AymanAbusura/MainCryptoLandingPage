@@ -15,14 +15,10 @@
     font-weight: 600;
 }
 
-/*body.no-scroll {
-    overflow: hidden;
-    height: 100vh;
-}*/
-
 .no-scroll {
     overflow: hidden;
     height: 100vh;
+    padding-right: 0 !important;
 }
 
 
