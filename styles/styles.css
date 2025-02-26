@@ -747,6 +747,8 @@ p {
 .faq__column img {
     border-radius: 30px;
     max-width: 250px;
+    position: relative;
+    z-index: 5;
 }
 
 .spoiler__item button {
@@ -757,6 +759,8 @@ p {
 
 .spoiler__item span {
     padding-left: 20px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .icon-big-faq {
@@ -765,8 +769,83 @@ p {
 }
 
 .icon-big-faq img {
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.faq__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around!important;
+    padding-top: 60px;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.faq__column, .faq__spoiler {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq__column img {
+    border-radius: 30px;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.faq__spoiler {
+    width: 50%;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.spoiler__text {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.faq_fire {
+    position: absolute;
+    background: url('../assets/fire_1.webp') no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    left: -2%;
+    top: 16%;
+    z-index: 4;
+}
+
+.faq__column__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    position: relative;
+    bottom: 84px;
+    left: 42px;
+    z-index: 6;
+}
+
+.faq__column__description span:nth-child(1) {
+    width: 50%;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.faq__column__description span:nth-child(2) {
+    width: 100%;
+    font-size: 10px;
+    background: #77738252;
+    padding: 5px;
+}
+
+.footer p {
+    font-weight: 300;
 }
 
 /* width: 1024px */
@@ -934,6 +1013,16 @@ p {
         margin-left: 0;
         padding: 20px;
     }
+    .spoiler__item {
+        width: 340px!important;
+    }
+    .faq__row {
+        justify-content: flex-start!important;
+    }
+    .faq_fire { 
+        width: 100%;
+        left: -27%; 
+    }
 }
 
 /* max-width: 768px */
@@ -1082,6 +1171,28 @@ p {
         margin-left: 0;
         padding: 20px;
     }
+    /*  FAQ  */
+    .container__faq {
+        flex-direction: column;
+    }
+    .container__faq__content, .container__faq__content p {
+        align-items: center;
+        text-align: center;
+    }
+    .faq__row {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .spoiler__item {
+        width: 400px!important;
+    }
+    .faq_fire { 
+        width: 100%;
+    }
+    .faq__column, .faq__spoiler {
+        width: 100%;
+    }
 }
 
 /* max-width: 425px */
@@ -1097,6 +1208,9 @@ p {
         flex-direction: column-reverse;
     }
     .investing_fire { top: 530%; }
+    .spoiler__item {
+        width: 300px !important
+    }
 }
 
 /* max-width: 320px */

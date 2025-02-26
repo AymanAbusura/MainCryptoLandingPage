@@ -659,7 +659,7 @@ textarea{
 	padding-top: 60px;
 	gap:30px;
 	position: relative;
-	z-index: 1;
+	z-index: 5;
 }
 .faq__column p{
 	color:#1a1a1a;
@@ -671,8 +671,8 @@ textarea{
 	margin-left:0
 }
 .faq__spoiler{
-	width:100%;
-	max-width:910px
+	width:40%;
+/*	max-width:910px*/
 }
 .spoiler{
 	display: grid;
@@ -680,7 +680,8 @@ textarea{
 }
 .spoiler__item{
 	border-bottom:1px solid rgba(213,217,237,.2);
-	width: 100%;
+/*	width: 100%;*/
+	width: 500px;
 	border: 1px solid #a575e1;
 	border-radius: 20px;
 	padding: 13px 20px;
@@ -706,8 +707,9 @@ textarea{
 	background-image:url("")
 }
 .spoiler__text{
-	padding:0 15px 15px 20px;
+	padding: 10px 15px 15px 20px;
 	color: #fff;
+	font-size: 12px;
 }
 .points .title-2{
 	text-align:center
@@ -1211,7 +1213,7 @@ table p+p{
 		max-width:350px
 }
 	.faq__spoiler{
-		width:calc(100% - 380px)
+/*		width:calc(100% - 380px)*/
 }
 	.icon-big{
 		width:60px;
