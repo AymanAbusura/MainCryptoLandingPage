@@ -23,7 +23,17 @@
     width: 100%;
     height: 100%;
     background-color: #100e1cb0;
-/*    background: rgba(0, 0, 0, 0.7);*/
+    z-index: 0;
+}
+
+.faq::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
     z-index: 0;
 }
 
@@ -255,7 +265,7 @@
     align-self: auto!important;
 }
 
-.about_title span {
+.about_title span, .faq_title span {
     display: block;
 }
 
@@ -282,7 +292,7 @@
     font-size: 15px;
 }
 
-/* Why Trade with NetherexPro? */
+/* Why Trade with */
 .visible { 
     position: relative;
     z-index: 5; 
@@ -453,7 +463,8 @@
 
 .highlight__investing {
     width: 81%;
-    background: #524d61;
+    background: #403c4e;
+/*    background: #524d61;*/
     padding: 20px;
     border-radius: 30px;
     font-weight: bold;
@@ -507,7 +518,7 @@ p {
     color: #fff;
 }
 
-.content__left__button {
+.content__left__button, .begin__card__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -518,7 +529,7 @@ p {
     gap: 5px;
 }
 
-.sign_btn_left {
+.sign_btn_left, .sign_btn_begin__card__header {
     width: auto;
     background: #db1246;
     color: white;
@@ -557,6 +568,206 @@ p {
     transform: rotate(354deg);
 }
 
+/* Getting Started with */
+.container_begin {
+    position: relative;
+    z-index: 5;
+}
+.begin__card__button {
+    align-self: center;
+    margin-top: 50px;
+}
+
+.block__begin__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.block__begin__card {
+    background: #1a142e;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block__begin__card:hover {
+    border: 1px solid #a575e1;
+}
+
+.begin__card__header {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.begin__card__title {
+    width: 30%;
+    background: #db1246;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.block__begin__card:hover .begin__card__title {
+    background: #2d1431;
+    color: white;
+    border: 1px solid #871134;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 8px;
+}
+
+.block__begin__card_description {
+    max-width: 85%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.block__begin__card:nth-child(1) {
+    margin-right: -20px;
+    z-index: 9;
+}
+
+.block__begin__card:nth-child(2) {
+    margin-top: -50px;
+    z-index: 10;
+}
+
+.block__begin__card:nth-child(3) {
+    margin-left: -20px;
+    padding-left: 50px;
+    z-index: 9;
+    background: #1a142e9c;
+}
+
+.block__begin__card:nth-child(3) .begin__card__title  {
+    align-self: flex-end;
+}
+
+.block__begin__card:nth-child(3):hover .begin__card__title  {
+    align-self: center;
+}
+
+@keyframes hoverEffect {
+    0% {
+        border: 1px solid transparent;
+    }
+    100% {
+        border: 1px solid #a575e1;
+    }
+}
+
+.block__begin__card:nth-child(2) {
+    animation: hoverEffect 0.5s ease forwards;
+}
+
+.block__begin__card:nth-child(2) .begin__card__title {
+    background: #2d1431;
+    color: white;
+    border: 1px solid #871134;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.begin_fire {
+    position: absolute;
+    background: url('../assets/fire_2.webp') no-repeat center center;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+    left: 50%;
+    top: 410%;
+    z-index: 4;
+    transform: rotate(-354deg) scaleX(-1);
+}
+
+/* FAQ */
+.faq {
+    position: relative;
+}
+.container__faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.faq_title {
+    flex: 1;
+}
+
+.container__faq__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.container__faq__content p {
+    text-align: end;
+    color: #666;
+}
+
+.container__faq__content h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.faq__column img {
+    border-radius: 30px;
+    max-width: 250px;
+}
+
+.spoiler__item button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spoiler__item span {
+    padding-left: 20px;
+}
+
+.icon-big-faq {
+    width: 40px!important;
+    height: 40px!important;
+}
+
+.icon-big-faq img {
+    width: 30px;
+    height: 30px;
+}
 
 /* width: 1024px */
 @media only screen and (width:1024px){
@@ -564,6 +775,7 @@ p {
         gap: 50px!important;
     }
     .investing_fire { top: 300%; }
+    .begin__card__title { width: 50%; }
 }
 
 /* width: 768px */
@@ -671,12 +883,15 @@ p {
         justify-content: center!important; 
         gap: 50px; 
     }
-    .about_title { display: inline!important; }
+    .about_title, .faq_title { display: inline!important; }
     .about_right_section { gap: 20px; }
     .about_txt { font-size: 20px!important; }
 
-    /* Why Trade with NetherexPro? */
-    .why_cards { flex-direction: column; }
+    /* Why Trade with */
+    .why_cards { 
+        flex-direction: column; 
+        gap: 10px;
+    }
     .block__body__image img { transform: initial; }
 
     .header_fire {
@@ -704,6 +919,21 @@ p {
         object-fit: fill;
     }
     .investing_fire { top: 540%; }
+    /*  BEING  */
+    .block__begin__cards { 
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .block__begin__card:nth-child(1) { 
+        margin-right: 0px;
+    }
+    .block__begin__card:nth-child(2) {
+        margin-top: 0;
+    }
+    .block__begin__card:nth-child(3) {
+        margin-left: 0;
+        padding: 20px;
+    }
 }
 
 /* max-width: 768px */
@@ -811,11 +1041,11 @@ p {
         justify-content: center!important; 
         gap: 50px; 
     }
-    .about_title { display: inline!important; }
+    .about_title, .faq_title { display: inline!important; }
     .about_right_section { gap: 20px; }
     .about_txt { font-size: 20px!important; }
 
-    /* Why Trade with NetherexPro? */
+    /* Why Trade with */
     .why_cards { flex-direction: column; }
     .block__body__image img { transform: initial; }
     
@@ -832,6 +1062,25 @@ p {
     .image-container__left__box {
         width: 100%;
         height: auto;
+    }
+
+    /*  BEING  */
+    .block__begin__cards { 
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .block__begin__card:hover .begin__card__title, .block__begin__card:nth-child(2) .begin__card__title, .block__begin__card:nth-child(3) .begin__card__title {
+        width: 50%;
+    }
+    .block__begin__card:nth-child(1) { 
+        margin-right: 0px;
+    }
+    .block__begin__card:nth-child(2) {
+        margin-top: 0;
+    }
+    .block__begin__card:nth-child(3) {
+        margin-left: 0;
+        padding: 20px;
     }
 }
 
@@ -853,4 +1102,5 @@ p {
 /* max-width: 320px */
 @media (max-width: 320px) {
     .investing_fire { top: 570%; }
+    .begin__card__title { width: 50%; }
 }

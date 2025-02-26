@@ -153,6 +153,7 @@ window.onload = function() {;
 			}
 		}
 
+
 		function hideSpoilerBody(spoilersBlock) {
 			const spoilerActiveButton = spoilersBlock.querySelector("[data-spoiler]._active");
 			console.log(spoilerActiveButton);
@@ -226,5 +227,5 @@ window.onload = function() {;
 		} else {
 			return _slideUp(target, duration);
 		}
-	};;
+	};
 };

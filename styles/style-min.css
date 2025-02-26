@@ -83,7 +83,7 @@ body{
 	line-height:1.5;
 	word-break:break-word;
 	color:#687a7f;
-	background-color: #100e1c!important;
+	background: #100e1c;
 }
 .wrapper{
 	overflow:hidden;
@@ -101,7 +101,7 @@ section{
 section.p0{
 	padding-block:30px 0
 }
-.bg{
+.bg, .faq{
 	background-image:url("../assets/bg.webp");
 	background-size: 100% 170%;
 /*	background-size:cover;*/
@@ -645,7 +645,7 @@ textarea{
 	max-width:320px
 }
 .faq{
-	background:#f7f8f8
+/*	background:#f7f8f8;*/
 }
 .faq__row{
 	display:-webkit-box;
@@ -656,7 +656,10 @@ textarea{
 	-webkit-box-pack:justify;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	gap:30px
+	padding-top: 60px;
+	gap:30px;
+	position: relative;
+	z-index: 1;
 }
 .faq__column p{
 	color:#1a1a1a;
@@ -672,43 +675,39 @@ textarea{
 	max-width:910px
 }
 .spoiler{
-	display:grid
+	display: grid;
+	gap: 20px;
 }
 .spoiler__item{
-	border-bottom:1px solid rgba(213,217,237,.2)
+	border-bottom:1px solid rgba(213,217,237,.2);
+	width: 100%;
+	border: 1px solid #a575e1;
+	border-radius: 20px;
+	padding: 13px 20px;
+	font-size: 16px;
+	box-sizing: border-box;
+	background: #1a142eb3;
+/*	background-color: transparent;*/
+	color: #fff;
 }
 .spoiler__title{
 	position:relative;
-	margin-bottom:10px;
-	padding:17px 50px 15px 30px;
 	width:100%;
 	font-weight:700;
 	font-size:16px;
 	line-height:1.4;
 	text-align:left;
-	border-radius:10px;
-	background:#fff;
-	color:#1a1a1a
-}
-.spoiler__title::before{
-	content:"";
-	position:absolute;
-	right:15px;
-	top:17px;
-	display:block;
-	width:24px;
-	height:24px;
-	background-image:url("../assets/icon-open.svg");
-	background-size:contain;
-	background-repeat:no-repeat;
-	-webkit-transition:all .3s ease-in;
-	transition:all .3s ease-in
+	border-radius:20px;
+/*	background: #1a142e;*/
+	color: #fff;
+	border-radius: 30px!important;
 }
 .spoiler__title._active::before{
 	background-image:url("")
 }
 .spoiler__text{
-	padding:0 15px 15px 20px
+	padding:0 15px 15px 20px;
+	color: #fff;
 }
 .points .title-2{
 	text-align:center
@@ -739,7 +738,8 @@ textarea{
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	background:#01c9ee;
+	background: #2d1431;
+	border: 1px solid #db1246;
 	border-radius:50%
 }
 .icon-big{
@@ -786,7 +786,7 @@ textarea{
 	-ms-flex-align:start;
 	align-items:flex-start;
 	gap:30px;
-	padding-block:20px 30px
+	padding-block:100px 20px;
 }
 .benefit__col{
 	-webkit-box-align:center;
@@ -799,7 +799,7 @@ textarea{
 	gap:10px
 }
 .benefit__col p{
-	color:#191d26;
+	color: #fff;
 	font-weight:600;
 	line-height:1.5
 }
@@ -1294,7 +1294,7 @@ table p+p{
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
 	.bg{
 		background-image:url("../assets/bg.webp")
-}
+	}
 }
 @media (any-hover:hover){
 	.menu__link:hover{
@@ -1336,7 +1336,7 @@ form {
 	width: 100%;
 	position: relative;
 }
-input[type="text"],input[type="email"],input[type="tel"],button {
+input[type="text"],input[type="email"],input[type="tel"] {
 	width: 100%;
 	border: 1px solid #a575e1;
 	border-radius: 50px;
