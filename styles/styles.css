@@ -1134,10 +1134,14 @@ p {
         padding-top: 50px;
         justify-content: center;
         gap: 20px;
+        flex-direction: column;
     }
     
     /*  ABOUT  */
-    .about_block { z-index: 5; }
+    .about_block { 
+        position: relative; 
+        z-index: 5; 
+    }
     .about_fire { top: 225%; }
     .container_about { 
         justify-content: center!important; 
