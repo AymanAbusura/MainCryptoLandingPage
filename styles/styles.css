@@ -1137,6 +1137,7 @@ p {
     }
     
     /*  ABOUT  */
+    .about_block { z-index: 5; }
     .about_fire { top: 225%; }
     .container_about { 
         justify-content: center!important; 
