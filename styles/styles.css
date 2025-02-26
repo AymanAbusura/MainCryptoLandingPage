@@ -1060,7 +1060,7 @@ p {
     }
     #menu.overlay { 
         display: block; 
-        z-index: 49;
+        z-index: 9999;
     }
     #menu ul {
         padding: 0;
@@ -1088,7 +1088,7 @@ p {
         width: 27px; 
         position: 
         relative; 
-        z-index: 50; 
+        z-index: 10000;
     }
     #burger-menu span, #burger-menu span:before, #burger-menu span:after {
         background: #fff; 
