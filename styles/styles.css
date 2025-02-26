@@ -39,7 +39,7 @@
 
 .header_fire {
     position: absolute;
-    background: url('../assets/fire.webp') no-repeat center center;
+    background: url('../assets/fire_1.webp') no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -236,7 +236,7 @@
 /* ABOUT */
 .about_fire {
     position: absolute;
-    background: url(../assets/fire_2.webp) no-repeat center center;
+    background: url('../assets/fire_2.webp') no-repeat center center;
     background-size: 80vw 100vh;
     width: 100%;
     height: 100%;
@@ -274,6 +274,7 @@
 }
 
 .about_description {
+    background-color: #1a142e;
     border: 1px solid #a575e1;
     border-radius: 20px;
     padding: 20px;
@@ -282,6 +283,10 @@
 }
 
 /* Why Trade with NetherexPro? */
+.visible { 
+    position: relative;
+    z-index: 5; 
+}
 .why_cards {
     display: flex;
     flex-direction: row;
@@ -358,7 +363,8 @@
     max-height: 100%;
     object-fit: cover;
     border-radius: 30px;
-    transform: rotateZ(50deg) scale(2.5);
+    transform: rotateZ(360deg) scale(1.9);
+/*    transform: rotateZ(50deg) scale(2.5);*/
 }
 
 .why_card:hover {
@@ -389,12 +395,6 @@
 
 .button-container {
     display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
-}
-
-.button-container {
-    display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
@@ -406,27 +406,168 @@
 
 /* INVESTING */
 .investing_section {
-    padding-block: 100px 0!important;
+    padding-block: 100px!important;
 }
 
+.investing_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 5;
+}
+
+.container__investing {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.left__box__investing {
+/*    background: rgba(255, 255, 255, 0.1);*/
+/*    background: #1a142e;*/
+    background: #1a142e66;
+    border: 1px solid #a575e1;
+    border-radius: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.content__left {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.content__left p {
+    margin-top: -50px;
+}
+
+.highlight__investing {
+    width: 81%;
+    background: #524d61;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #f8f9fa;
+    position: relative;
+    top: -9%;
+}
+
+.image-container__left__box {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    border: 1px solid #a575e1;
+    border-radius: 30px;
+}
+
+.image-container__left__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.right__box__investing {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: none;
+    width: 30%;
+    z-index: 5;
+}
+.image-container {
+    background-color: #1a142e;
+    border: 1px solid #a575e1;
+    padding: 20px;
+    border-radius: 30px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid #a575e1;
+}
+.right__box__investing p {
+    font-size: 17px;
+}
+h2 {
+    color: #b583ff;
+}
+p {
+    line-height: 1.6;
+    color: #fff;
+}
+
+.content__left__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #db1246;
+    background: #1a142e;
+    padding: 5px;
+    border-radius: 50px;
+    gap: 5px;
+}
+
+.sign_btn_left {
+    width: auto;
+    background: #db1246;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.arrow-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.investing_fire {
+    position: absolute;
+    background: url('../assets/fire_3.webp') no-repeat center center;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 240%;
+    z-index: 4;
+    transform: rotate(354deg);
+}
+
+
+/* width: 1024px */
 @media only screen and (width:1024px){
     .home__hold {
         gap: 50px!important;
     }
+    .investing_fire { top: 300%; }
 }
 
+/* width: 768px */
 @media (width: 768px) {
-    .header_fire {
-        left: 35%;
-        top: 30%;
-    }
-    .block__body__image {
-        max-height: 230px;
-    }
-
-}
-
-@media (max-width: 768px) {
     .header { padding: 15px 10px; }
     .desktop-nav, .desktop { display: none; }
     .mobile-menu { 
@@ -441,7 +582,147 @@
         left: 0; 
         width: 100%; 
         height: 100vh; 
-        background: rgba(0, 0, 0, 0.5); 
+        background: rgba(0, 0, 0, 0.8); 
+        text-align: center; 
+        padding-top: 100px; 
+    }
+    #menu.overlay { 
+        display: block; 
+        z-index: 49;
+    }
+    #menu ul {
+        padding: 0;
+    }
+    #menu li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    #menu a {
+        color: #fff;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+    .contact-btn-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #burger-menu { 
+        cursor: pointer; 
+        height: 27px; 
+        width: 27px; 
+        position: 
+        relative; 
+        z-index: 50; 
+    }
+    #burger-menu span, #burger-menu span:before, #burger-menu span:after {
+        background: #fff; 
+        display: block; 
+        height: 2px; 
+        position: absolute; 
+        transition: 0.3s ease-in-out;
+    }
+    #burger-menu span:before, #burger-menu span:after { content: ''; }
+    #burger-menu span:before { 
+        left: 0; 
+        top: -10px; 
+        width: 27px; 
+    }
+    #burger-menu span { 
+        right: 0; 
+        top: 13px; 
+        width: 27px; 
+    }
+    #burger-menu span:after { 
+        left: 0; 
+        top: 10px; 
+        width: 27px; 
+    }
+    #burger-menu.close span:before { 
+        top: 0; 
+        transform: rotate(90deg); 
+        width: 27px; 
+    }
+    #burger-menu.close span { 
+        transform: rotate(-45deg); 
+        top: 13px; 
+        width: 27px; 
+    }
+    #burger-menu.close span:after { 
+        top: 0; 
+        left: 0; 
+        transform: rotate(90deg); 
+        opacity: 0; 
+        width: 0; 
+    }
+    .description__text { text-align: center; }
+    .home__body__div {
+        padding-top: 50px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    /*  ABOUT  */
+    .about_fire { top: 200%; }
+    .container_about { 
+        justify-content: center!important; 
+        gap: 50px; 
+    }
+    .about_title { display: inline!important; }
+    .about_right_section { gap: 20px; }
+    .about_txt { font-size: 20px!important; }
+
+    /* Why Trade with NetherexPro? */
+    .why_cards { flex-direction: column; }
+    .block__body__image img { transform: initial; }
+
+    .header_fire {
+        left: 35%;
+        top: 30%;
+    }
+    .block__body__image {
+        max-height: 230px;
+    }
+    .block__body_special {
+        gap: 100px;
+    }
+    .button-container {
+        margin-top: 0;
+    }
+    .highlight__investing {
+        width: 100%;
+    }
+    .container__investing {
+        gap: 50px;
+    }
+    .image-container__left__box img {
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+    }
+    .investing_fire { top: 540%; }
+}
+
+/* max-width: 768px */
+@media (max-width: 767px) {
+    .header { padding: 15px 10px; }
+    .desktop-nav, .desktop { display: none; }
+    .mobile-menu { 
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+    #menu { 
+        display: none; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100vh; 
+        background: rgba(0, 0, 0, 0.8); 
         text-align: center; 
         padding-top: 100px; 
     }
@@ -536,14 +817,40 @@
 
     /* Why Trade with NetherexPro? */
     .why_cards { flex-direction: column; }
+    .block__body__image img { transform: initial; }
+    
+    /* Investing in Bitcoin? */
+    .container__investing {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 0;
+    }
+    .left__box__investing, .right__box__investing { width: 100%; }
+    .left__box__investing { flex-direction: column; }
+    .content__left { width: 100%; }
+    .highlight__investing { width:100%; }
+    .image-container__left__box {
+        width: 100%;
+        height: auto;
+    }
 }
 
+/* max-width: 425px */
 @media (max-width: 425px) {
     .header_fire { display: none; }
+    .about_fire { top: 200%; }
+    .investing_fire { top: 510%; }
 }
 
+/* max-width: 375px */
 @media (max-width: 375px) {
     .home__body__div {
         flex-direction: column-reverse;
     }
+    .investing_fire { top: 530%; }
+}
+
+/* max-width: 320px */
+@media (max-width: 320px) {
+    .investing_fire { top: 570%; }
 }
