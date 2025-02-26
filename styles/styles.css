@@ -1009,7 +1009,7 @@ p {
         height: auto;
         object-fit: fill;
     }
-    .investing_fire { top: 540%; }
+/*    .investing_fire { top: 540%; }*/
     /*  BEING  */
     .block__begin__cards { 
         flex-direction: column; 
@@ -1043,6 +1043,7 @@ p {
         top: -30%;
         transform: rotate(5deg) scaleX(-1);
     }
+    .about_fire, .header_fire, .investing_fire, .begin_fire  { display: none; }
 }
 
 /* max-width: 768px */
@@ -1226,13 +1227,15 @@ p {
     .faq__column, .faq__spoiler {
         width: 100%;
     }
+
+    .about_fire, .header_fire, .investing_fire, .begin_fire  { display: none; }
 }
 
 /* max-width: 425px */
 @media (max-width: 425px) {
     .header_fire { display: none; }
-    .about_fire { top: 200%; }
-    .investing_fire { top: 510%; }
+/*    .about_fire { top: 200%; }*/
+/*    .investing_fire { top: 510%; }*/
 }
 
 /* max-width: 375px */
@@ -1240,7 +1243,7 @@ p {
     .home__body__div {
         flex-direction: column-reverse;
     }
-    .investing_fire { top: 530%; }
+/*    .investing_fire { top: 530%; }*/
     .spoiler__item {
         width: 300px !important
     }
@@ -1248,6 +1251,6 @@ p {
 
 /* max-width: 320px */
 @media (max-width: 320px) {
-    .investing_fire { top: 570%; }
+/*    .investing_fire { top: 570%; }*/
     .begin__card__title { width: 50%; }
 }

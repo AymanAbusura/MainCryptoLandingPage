@@ -280,8 +280,6 @@ p+p{
 }
 .home{
 	padding:0;
-    position: relative;
-    z-index: 1;
 }
 .home__title{
 	font-weight:300;
