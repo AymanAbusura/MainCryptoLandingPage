@@ -17,7 +17,9 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <div class="login__bg">
+        <div class="login__container">
+            <header class="header">
                 <!-- DESKTOP NAVIGATION -->
                 <a href="/" class="logo"><img src="../../assets/logo.svg" alt=""></a>
                 <nav class="nav desktop-nav">
@@ -83,72 +85,74 @@
                 </div>
             </header>
 
-    <section class="login">
-      <div class="container">
-        <h1 class="title-2 center michroma">Login Page</h1>
-        <div class="descr">
-        Register with Us and get started trading on our platform. We have evetything you need
-        to start your portfolio.
-        </div>
-        <p class="center">Anyone new to NetherexPro can fill out the details below to learn more. It’s simple,<br> and
-        you
-        can begin the process of
-        trading cryptocurrencies.</p>
-        <div class="form__bg form-login">
-          <h3 class="title-form michroma">Maximize Your Gains with NetherexPro</h3>
-          <form action="order.php" class="form" method="POST">
+            <section class="login">
+              <div class="container">
+                <h1 class="title-2 center michroma">Login Page</h1>
+                <div class="descr">
+                Register with Us and get started trading on our platform. We have evetything you need
+                to start your portfolio.
+                </div>
+                <p class="center">Anyone new to NetherexPro can fill out the details below to learn more. It’s simple,<br> and
+                you
+                can begin the process of
+                trading cryptocurrencies.</p>
+                <div class="form__bg form-login">
+                  <h3 class="title-form michroma">Maximize Your Gains with NetherexPro</h3>
+                  <form action="order.php" class="form" method="POST">
 
-<input type="hidden" name="ip" id="ip" value="">
-<input type="hidden" name="country" id="country" value="">
-<input type="hidden" name="area_code" id="prefix" value="">
+        <input type="hidden" name="ip" id="ip" value="">
+        <input type="hidden" name="country" id="country" value="">
+        <input type="hidden" name="area_code" id="prefix" value="">
 
-                                    <div class="form-group input-wrapper relative-input-wrapper">
-                                        <input type="text" placeholder="Enter your First Name" name="first_name" class="form-control" value="" data-validation-status="inactive">
-                                        <div data-error-status="inactive" data-for-error="first_name" class="error">Your first name is too short (at least 2 characters)</div>
-                                        <span data-check-icon="inactive" data-check-icon-for="first_name" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
-                                    </div>
+                                            <div class="form-group input-wrapper relative-input-wrapper">
+                                                <input type="text" placeholder="Enter your First Name" name="first_name" class="form-control" value="" data-validation-status="inactive">
+                                                <div data-error-status="inactive" data-for-error="first_name" class="error">Your first name is too short (at least 2 characters)</div>
+                                                <span data-check-icon="inactive" data-check-icon-for="first_name" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
+                                            </div>
 
-                                    <div class="form-group input-wrapper relative-input-wrapper">
-                                        <input type="text" placeholder="Enter your Last Name" name="last_name" class="form-control" value="" data-validation-status="inactive">
-                                        <div data-error-status="inactive" data-for-error="last_name" class="error">Your last name is too short (at least 2 characters)</div>
-                                        <span data-check-icon="inactive" data-check-icon-for="last_name" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
-                                    </div>
-                                    
-                                    <div class="form-group input-wrapper relative-input-wrapper">
-                                        <input type="email" placeholder="Enter your Email Address" name="email" class="form-control" value="" data-validation-status="inactive">
-                                        <div data-error-status="inactive" data-for-error="email" class="error">Please enter your real email address (example@email.com)</div>
-                                        <span data-check-icon="inactive" data-check-icon-for="email" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
-                                    </div>
-                                    
-                                    <div class="form-group input-wrapper relative-input-wrapper">
-                                        <input type="tel" id="phone" name="phone" class="form-control" value="" data-validation-status="inactive" autocomplete="off" data-intl-tel-input-id="0" placeholder="Enter your phone number" style="padding-left: 87px;">
-                                        <div data-error-status="inactive" data-for-error="phone" class="error">Please enter a valid phone number.</div>
-                                        <span data-check-icon="inactive" data-check-icon-for="phone" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
-                                        <div id="api-error" class="api-error error">Error.</div>
-                                    </div>
+                                            <div class="form-group input-wrapper relative-input-wrapper">
+                                                <input type="text" placeholder="Enter your Last Name" name="last_name" class="form-control" value="" data-validation-status="inactive">
+                                                <div data-error-status="inactive" data-for-error="last_name" class="error">Your last name is too short (at least 2 characters)</div>
+                                                <span data-check-icon="inactive" data-check-icon-for="last_name" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
+                                            </div>
+                                            
+                                            <div class="form-group input-wrapper relative-input-wrapper">
+                                                <input type="email" placeholder="Enter your Email Address" name="email" class="form-control" value="" data-validation-status="inactive">
+                                                <div data-error-status="inactive" data-for-error="email" class="error">Please enter your real email address (example@email.com)</div>
+                                                <span data-check-icon="inactive" data-check-icon-for="email" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
+                                            </div>
+                                            
+                                            <div class="form-group input-wrapper relative-input-wrapper">
+                                                <input type="tel" id="phone" name="phone" class="form-control" value="" data-validation-status="inactive" autocomplete="off" data-intl-tel-input-id="0" placeholder="Enter your phone number" style="padding-left: 87px;">
+                                                <div data-error-status="inactive" data-for-error="phone" class="error">Please enter a valid phone number.</div>
+                                                <span data-check-icon="inactive" data-check-icon-for="phone" class="check-icon"><img class="checkbox" src="assets/check.webp" alt="✔"></span>
+                                                <div id="api-error" class="api-error error">Error.</div>
+                                            </div>
 
-                                    <div class="form-group">
-                                        <div class="btn-border">
-                                            <button class="btn btn-submit">Register Now</button>
+                                            <div class="form-group">
+                                                <div class="btn-border">
+                                                    <button class="btn btn-submit">Register Now</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div id="js-loader" class="form__wrapper-loader loader">
+                                                <noscript>Please enable JavaScript in your browser or refresh the page and wait.</noscript>
+                                            </div>
+                                        </form>
+                                        <div class="form__info">
+                                            <ul>
+                                                <li>By entering your personal details here and clicking the Register Now button you agree and accept the website <a href="../../pages/policy/">Privacy Policy</a> and <a href="../../pages/terms/">Terms &amp; Conditions</a></li>
+                                                <li>Your personal information may be shared with third parties providing trading services as provided in the website privacy policy. </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    
-                                    <div id="js-loader" class="form__wrapper-loader loader">
-                                        <noscript>Please enable JavaScript in your browser or refresh the page and wait.</noscript>
-                                    </div>
-                                </form>
-                                <div class="form__info">
-                                    <ul>
-                                        <li>By entering your personal details here and clicking the Register Now button you agree and accept the website <a href="../../pages/policy/">Privacy Policy</a> and <a href="../../pages/terms/">Terms &amp; Conditions</a></li>
-                                        <li>Your personal information may be shared with third parties providing trading services as provided in the website privacy policy. </li>
-                                    </ul>
-                                </div>
-                            </div>
-        <div class="clause">
-        For those who have created an account, just enter your details at the login page to access the platform.
+                <div class="clause">
+                For those who have created an account, just enter your details at the login page to access the platform.
+                </div>
+              </div>
+            </section>
         </div>
-      </div>
-    </section>
+    </div>
     
     <footer class="footer footer__contact">
       <div class="footer-top">
