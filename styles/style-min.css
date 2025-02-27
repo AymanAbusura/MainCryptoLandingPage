@@ -889,7 +889,7 @@ input{
 .policy a,.terms a{
 	display:inline-block;
 	font-weight:700;
-	color:#fd8704
+	color: #a575e1;
 }
 .policy p+.title-3,.terms p+.title-3{
 	padding-top:20px
@@ -922,7 +922,8 @@ input{
 .policy ul{
 	list-style-type:lower-latin;
 	margin-left:16px;
-	padding:20px 0
+	padding:20px 0;
+	color: #fff;
 }
 .table td,.table th{
 	vertical-align:top;
@@ -936,7 +937,8 @@ table p+p{
 	margin-top:10px
 }
 .table-bordered,.table-bordered td,.table-bordered th{
-	border-top:1px solid #d5d9ed
+	border-top:1px solid #d5d9ed;
+	color: #fff;
 }
 @media only screen and (min-width:374.98px){
 	.logo{
