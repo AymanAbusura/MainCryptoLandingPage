@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 89" width="105" height="89">
+	<title>компьютер</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-miterlimit:10;stroke-width: 6 } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m23 13h59c4.4 0 8 3.6 8 8v30.6c0 4.4-3.6 8.1-8 8.1h-59c-4.4 0-8-3.7-8-8.1v-30.6c0-4.4 3.6-8 8-8z"/>
+	<path fill-rule="evenodd" class="s0" d="m51.1 59.8h4.4v11.6h-4.4z"/>
+	<path class="s1" d="m71.7 76v-1.4c0-3.2-2.6-5.8-5.8-5.8h-25.5c-3.2 0-5.8 2.6-5.8 5.8v1.4z"/>
+</svg>

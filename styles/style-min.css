@@ -405,14 +405,14 @@ input{
 	width:100%;
 	font-size:18px
 }
-textarea{
+/*textarea{
 	border:1px solid #d5d9ed;
 	border-radius:10px;
 	padding:13px 20px;
 	font-weight:500;
 	color:#666;
 	resize:vertical
-}
+}*/
 .btn{
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -806,7 +806,9 @@ textarea{
 	line-height:1.5
 }
 .footer{
-	background-color:#191d26
+	background-color:#191d26;
+	position: relative;
+	z-index: 6;
 }
 .footer p{
 	font-size: 14px;
@@ -1360,7 +1362,7 @@ input[type="text"],input[type="email"],input[type="tel"] {
 	border: 3px solid rgb(235, 22, 43);
 	box-sizing: border-box;
 }
-input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus {
+input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus, textarea:focus {
 	border: 3px solid #007bff;
 	outline: none;
 	/* Видалення стандартного обведення фокусу */

@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 99" width="107" height="99">
+	<title>молоток</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-miterlimit:10;stroke-width: 3.3 } 
+		.s1 { fill: #ffffff } 
+		.s2 { fill: none;stroke: #ffffff;stroke-miterlimit:10;stroke-width: 4 } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m35.2 31.2l7.3-7.4"/>
+	<path fill-rule="evenodd" class="s1" d="m31.9 36.1c-0.9 0-1.6-0.8-1.6-1.7 0-0.9 0.7-1.6 1.6-1.6 0.9 0 1.6 0.7 1.6 1.6 0 0.9-0.7 1.7-1.6 1.7z"/>
+	<path fill-rule="evenodd" class="s2" d="m16.5 34c1.6-1.8 4.2-1.9 6-0.3l14.4 13.4c1.7 1.6 1.8 4.3 0.2 6-1.6 1.7-4.2 1.8-6 0.2l-14.4-13.3c-1.7-1.6-1.8-4.3-0.2-6z"/>
+	<path fill-rule="evenodd" class="s2" d="m41.5 9.5c1.6-1.7 4.3-1.8 6-0.2l14.4 13.4c1.8 1.6 1.9 4.3 0.3 6-1.6 1.7-4.3 1.8-6 0.2l-14.5-13.4c-1.7-1.6-1.8-4.2-0.2-6z"/>
+	<path fill-rule="evenodd" class="s2" d="m22.9 34.2l18.8-18.8"/>
+	<path fill-rule="evenodd" class="s2" d="m37.1 47.3l18.3-18.3"/>
+	<path fill-rule="evenodd" class="s2" d="m23.7 64.7h24c2 0 3.6 1.6 3.6 3.5 0 2-1.6 3.6-3.6 3.6h-24c-1.9 0-3.5-1.6-3.5-3.6 0-1.9 1.6-3.5 3.5-3.5z"/>
+	<path fill-rule="evenodd" class="s2" d="m19.6 72.9h32.2c2.1 0 3.8 1.7 3.8 3.8 0 2.1-1.7 3.8-3.8 3.8h-32.2c-2.1 0-3.8-1.7-3.8-3.8 0-2.1 1.7-3.8 3.8-3.8z"/>
+	<path fill-rule="evenodd" class="s2" d="m55.1 33.6c1 1.1 1 2.8 0 3.8l-8.5 8.5c-1.1 1.1-2.8 1.1-3.8 0-1.1-1-1.1-2.7 0-3.8l8.5-8.5c1-1 2.7-1 3.8 0z"/>
+	<path class="s2" d="m88.4 76.4l-0.4 0.4c-2.8 3-8.3 2.4-11.8-1.4l-23.7-25c-2.5-2.7-2.9-6.3-0.9-8.4 1.9-2 5.4-1.8 8 0.4l26.8 22.6c3.9 3.2 4.8 8.5 2 11.4z"/>
+	<path fill-rule="evenodd" class="s2" d="m65.7 63.9l8.7-8.7"/>
+	<path fill-rule="evenodd" class="s2" d="m70.1 68.8l9.5-9.6"/>
+</svg>

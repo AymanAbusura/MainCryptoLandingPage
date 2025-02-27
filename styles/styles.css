@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@300;400;600&display=swap');
+
 .michroma {
     font-family: 'Michroma', sans-serif;
 }
@@ -76,7 +78,7 @@
     display: flex;
     gap: 20px;
     background: #1a112b;
-    padding: 10px 20px;
+    padding: 0px 20px 0px 20px;
     border: 1px solid #a575e1;
     border-radius: 30px;
 }
@@ -153,6 +155,7 @@
 
 .description__text {
     color: #fff;
+
 }
 
 .home__body__div {
@@ -309,6 +312,8 @@
     gap: 40px;
     justify-content: space-between;
     align-items: stretch;
+    position: relative;
+    z-index: 6;
 }
 
 .why_card {
@@ -746,12 +751,12 @@ p {
 
 .container__faq__content p {
     text-align: end;
-    color: #666;
+    color: #fff;
 }
 
 .container__faq__content h3 {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .faq__column img {
@@ -858,6 +863,90 @@ p {
     font-weight: 300;
 }
 
+.logo_footer {
+    align-self: flex-start;
+}
+
+/* CONTACT PAGE */
+.bg__contact {
+    background-image:url("../assets/bg.webp");
+    background-size: 100% 170%;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-color:#00050b;
+    height: 100vh;
+}
+
+.bg__contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #100e1cb0;
+    z-index: 0;
+}
+
+
+.contact__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact__container__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.contact__container__form {
+    flex: 1;
+}
+
+.contact__container__title p {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #a575e1;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-size: 16px;
+    font-weight:500;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+    resize:vertical
+}
+
+.contact_fire {
+    position: absolute;
+    background: url('../assets/fire_2.webp') no-repeat center center;
+    background-size: contain;
+    width: 70%;
+    height: 100%;
+    left: 50%;
+    top: 20%;
+    z-index: 4;
+    transform: rotate(-354deg) scaleX(-1);
+}
+
+main {
+    position: relative;
+    z-index: 5;
+}
+
+.footer__contact {
+    background: #000!important;
+}
+
 /* width: 1024px */
 @media only screen and (width:1024px){
     .home__hold {
@@ -902,7 +991,7 @@ p {
     #menu a {
         color: #fff;
         display: block;
-        font-size: 32px;
+        font-size: 25px;
         margin-bottom: 30px;
         text-decoration: none;
     }
@@ -910,6 +999,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 25px;
     }
     #burger-menu { 
         cursor: pointer; 
@@ -1049,6 +1139,12 @@ p {
         position: fixed;
         touch-action: none;
     }
+    .contact__container {
+        gap: 100px;
+    }
+    .contact__container__title h1 {
+        font-size: 40px;
+    }
 }
 
 /* max-width: 768px */
@@ -1093,7 +1189,7 @@ p {
     #menu a {
         color: #fff;
         display: block;
-        font-size: 32px;
+        font-size: 25px;
         margin-bottom: 30px;
         text-decoration: none;
     }
@@ -1101,6 +1197,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 25px;
     }
     #burger-menu { 
         cursor: pointer; 
@@ -1239,8 +1336,23 @@ p {
     .faq__column, .faq__spoiler {
         width: 100%;
     }
-
+    .container__faq__content h3 {
+        font-size: 20px;
+    }
     .about_fire, .header_fire, .investing_fire, .begin_fire  { display: none; }
+
+/*  CONTACT PAGE  */
+    .contact__container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact__container__title h1 {
+        font-size: 40px;
+    }
+
+    .contact__container__form {
+        margin-inline: initial!important;
+    }
 }
 
 /* max-width: 425px */

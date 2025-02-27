@@ -28,17 +28,17 @@ window.onload = function() {;
     setupToggle('toggle');
     setupToggle('mobile-toggle');
 
-	// var buttons = document.querySelectorAll(".btn-cta");
-	// var form = document.getElementById("form");
-	// if (buttons.length > 0) {
-	// 	for (var i = 0; i < buttons.length; i++) {
-	// 		buttons[i].addEventListener("click", function() {
-	// 			form.scrollIntoView({
-	// 				behavior: "smooth"
-	// 			});
-	// 		});
-	// 	}
-	// }
+	var buttons = document.querySelectorAll(".scroll_btn");
+	var form = document.getElementById("form");
+	if (buttons.length > 0) {
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].addEventListener("click", function() {
+				form.scrollIntoView({
+					behavior: "smooth"
+				});
+			});
+		}
+	}
 
 	// замена домена
 	var domainName = "netherexpro.com";
