@@ -940,7 +940,7 @@ textarea {
 
 main {
     position: relative;
-    z-index: 5;
+    z-index: 4;
 }
 
 .footer__contact {
