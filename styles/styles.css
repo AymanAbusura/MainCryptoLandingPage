@@ -268,6 +268,7 @@
 .container_about {
     position: relative;
     z-index: 6;
+    margin-top: 100px;
 }
 
 .about_block {
@@ -574,7 +575,7 @@ p {
     width: 100%;
     height: 100%;
     left: 0;
-    top: 240%;
+    top: 260%;
     z-index: 4;
     transform: rotate(354deg);
 }
@@ -888,7 +889,6 @@ p {
     z-index: 0;
 }
 
-
 .contact__container {
     display: flex;
     flex-direction: row;
@@ -947,6 +947,127 @@ main {
     background: #000!important;
 }
 
+/* ABOUT PAGE */
+.join__about {
+    position: relative;
+    z-index: 5;
+}
+.join__about_fire {
+    position: absolute;
+    background: url('../assets/fire_2.webp') no-repeat center center;
+    background-size: 80vw 100vh;
+    width: 100%;
+    height: 200%;
+    left: -11%;
+    top: -40%;
+    z-index: 4;
+    transform: rotate(358deg);
+}
+.container__about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-inline: 0 !important;
+    gap: 220px;
+    position: relative;
+    z-index: 5;
+}
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    flex: 1;
+}
+.text-content {
+    flex: 1;
+    text-align: right;
+    align-self: flex-end;
+    margin-top: 200px;
+}
+.subtitle {
+    font-size: 25px;
+    margin-bottom: 10px;
+    max-width: 800px;
+    color: #fff;
+}
+.content {
+    font-size: 12px;
+    max-width: 800px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.footer__about {
+    background: #00000021 !important;
+}
+
+.container__future {
+    justify-content: center!important;
+}
+
+.investing_fire_future {
+    top: 130%!important;
+}
+
+.left__box__future {
+    background: #1a142ea6!important;
+}
+
+.content__left__button_future {
+    align-self: flex-start!important;
+}
+
+.bg__about {
+    background-image:url("../assets/bg.webp");
+    background-size: 100% 170%;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-color:#00050b;
+    height: auto;
+}
+
+.bg__about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-color: #100e1cb0;
+    z-index: 0;
+}
+
+.home__content__about {
+    width: 50%;
+    height: 50%;
+}
+
+.about_block_button {
+    margin-top: 50px;
+}
+
+.about_right_section_about img {
+    box-shadow: none!important;
+    object-fit: cover;
+    height: 43%;
+}
+
+.about__fire {
+    position: absolute;
+    background: url("../assets/fire_1.webp") no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    left: 35%;
+    top: 0;
+    z-index: 4;
+}
+
+.container__future {
+    position: relative;
+    z-index: 6;
+}
+
 /* width: 1024px */
 @media only screen and (width:1024px){
     .home__hold {
@@ -954,6 +1075,11 @@ main {
     }
     .investing_fire { top: 300%; }
     .begin__card__title { width: 50%; }
+    .future_container { padding-top: 50px!important; }
+    .highlight__investing__future { width: 100%!important; }
+    .container__about { gap: 0; padding: 20px!important; }
+    .subtitle, .content { max-width: 400px!important; }
+    .bg__about { height: auto; }
 }
 
 /* width: 768px */
@@ -1144,6 +1270,41 @@ main {
     }
     .contact__container__title h1 {
         font-size: 40px;
+    }
+
+    .container_about { margin-top: 0px; }
+    .about__fire, .join__about_fire { display: none; }
+    .bg__about { height: auto; }
+    .about_right_section { flex-direction: column; }
+    .about__block { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__block__title {  }
+    .about__block__title { width: 100%; }
+    .about__block__title span { display: inline; }
+    .home__content__about {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .container__about {
+        gap: 0!important;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center
+    }
+    .text-content { 
+        margin-top: 0;
+        text-align: center;
+    }
+    .left__box__investing { width: 100% }
+    .image-container__left__box { display:; }
+    .block__about { position: relative; z-index: 4; }
+    .container__about {
+        align-items: center;
+        gap: 10px!important;
     }
 }
 
@@ -1339,7 +1500,7 @@ main {
     .container__faq__content h3 {
         font-size: 20px;
     }
-    .about_fire, .header_fire, .investing_fire, .begin_fire  { display: none; }
+    .about_fire, .header_fire, .investing_fire, .begin_fire, .about__fire, .join__about_fire  { display: none; }
 
 /*  CONTACT PAGE  */
     .contact__container {
@@ -1353,13 +1514,41 @@ main {
     .contact__container__form {
         margin-inline: initial!important;
     }
+
+    .container__about {
+        gap: 0!important;
+        padding: 20px;
+    }
+    .container__about {
+        margin-top: 0;
+    }
+    .bg__about {
+        height: auto;
+    }
+    .container__about {
+        gap: 10px!important;
+    }
+    .container__about { flex-direction: column; align-items: center; }
+    .text-content { margin-top: 0; text-align: center; }
+    .block__about { position: relative; z-index: 4; }
+
+    .about__block__title {
+        width: 100%!important;
+    }
+
+    .home__content__about {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }
 
 /* max-width: 425px */
 @media (max-width: 425px) {
     .header_fire { display: none; }
-/*    .about_fire { top: 200%; }*/
-/*    .investing_fire { top: 510%; }*/
+    .about__block__title {
+        width: 100%!important;
+    }
 }
 
 /* max-width: 375px */
