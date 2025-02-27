@@ -16,11 +16,9 @@
 }
 
 .no-scroll {
-/*    overflow: hidden;*/
     height: 100vh;
     padding-right: 0 !important;
 }
-
 
 .bg::before {
     content: "";
@@ -1044,10 +1042,24 @@ p {
         transform: rotate(5deg) scaleX(-1);
     }
     .about_fire, .header_fire, .investing_fire, .begin_fire  { display: none; }
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        touch-action: none;
+    }
 }
 
 /* max-width: 768px */
 @media (max-width: 767px) {
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        touch-action: none;
+    }
     .header { padding: 15px 10px; }
     .desktop-nav, .desktop { display: none; }
     .mobile-menu { 
