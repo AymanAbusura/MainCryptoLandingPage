@@ -403,7 +403,7 @@
     border: none;
 }
 
-.why_card h3 {
+.why_card h3, .why_card_special h3 {
     text-decoration: underline;
     text-underline-offset: 5px;
     font-size: 16px!important;
